@@ -50,7 +50,7 @@ html(lang='en')
   | &#x9;
   body
     // Top Bar Starts
-    .top-bar(style="background-color: black; border-bottom: 1px solid white;")
+    .top-bar(style="background-color: #181818; border-bottom: 1px solid #464646;")
       // Nested Container Starts
       .container.clearfix.text-center-xs
         ul.list-unstyled.list-inline.pull-left-lg.pull-left-md.pull-left-sm.animation
@@ -79,34 +79,15 @@ html(lang='en')
       // Nested Container Ends
     // Top Bar Ends
     // Header Starts
-    header.main-header(style="background-color: black;")
+    header.main-header(style="background-color: white;border: none;")
       // Nested Container Starts
       .container.text-center-xs
         // Nested Row Starts
         .row
           // Logo Starts
-          .col-lg-3.col-sm-4.col-xs-12
-            h4(onclick="javascript:window.location='/index';", style="font-family: 'Orbitron', sans-serif;color:white;cursor: pointer;") Silver Gate Lending
+          .col-lg-3.col-sm-12
+            h4(onclick="javascript:window.location='/index';", style="font-family: 'Orbitron', sans-serif;color:black;cursor: pointer;") Silver Gate Lending
           // Logo Ends
-          // Opening Hours Starts
-          .col-sm-4.col-xs-12.col-lg-offset-2.hidden-xs
-            .clearfix
-              i.fa.fa-clock-o.pull-left-lg.pull-left-md.pull-left-sm.circle
-              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-              h6.text-spl-color.text-medium Opening Hours
-              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-              p.text-light
-                em Mon&ndash;Fri: 9am&ndash;6pm, Sun: 10am&ndash;1pm
-          // Opening Hours Ends
-          // Contact Number Starts
-          .col-lg-3.col-sm-4.col-xs-12.hidden-xs
-            .clearfix
-              i.fa.fa-phone.pull-left-lg.pull-left-md.pull-left-sm.circle
-              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-              h6.text-spl-color.text-medium Contact Number
-              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-              p.text-light
-                em 888&ndash;123&ndash;2323, 555&ndash;123&ndash;2323
           // Contact Number Ends
         // Nested Row Ends
       // Nested Container Ends
@@ -136,14 +117,12 @@ html(lang='en')
         li
           a(href='/index') Home
         | &#x9;&#x9;&#x9;&#x9;
-        li.active 404 Page
+        li.active Error Page
     // Breadcrumb Ends
     // Main Container Starts
     .main-container.container.text-center
       h1.text-spl-color.text-normal
-        | 4
-        i.fa.fa-meh-o
-        | 4
+        i.fa.fa-database
       | &#x9;&#x9;&#x9;
       h4.main-heading-1.text-spl-color.text-spl-color.text-center.text-uppercase.text-normal Oops! Page not found
       | &#x9;&#x9;&#x9;
