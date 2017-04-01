@@ -1,0 +1,339 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    | &#x9;&#x9;
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    | &#x9;&#x9;
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    | &#x9;&#x9;
+    meta(name='description', content='')
+    | &#x9;&#x9;
+    meta(name='author', content='')
+    | &#x9;&#x9;
+    title Silver Gate Lending
+    // Bootstrap
+    link(href='css/bootstrap.min.css', rel='stylesheet')
+    // Google Web Fonts
+    link(href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic', rel='stylesheet', type='text/css')
+    | &#x9;&#x9;
+    link(href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Exo|Noto+Sans|Orbitron', rel='stylesheet')
+    // Template CSS Files
+    link(href='font-awesome/css/font-awesome.min.css', rel='stylesheet')
+    | &#x9;&#x9;
+    link(href='js/plugins/owl-carousel/owl.carousel.css', rel='stylesheet')
+    | &#x9;&#x9;
+    link(href='js/plugins/owl-carousel/owl.theme.css', rel='stylesheet')
+    | &#x9;&#x9;
+    link(href='js/plugins/magnific-popup/magnific-popup.css', rel='stylesheet')
+    | &#x9;&#x9;
+    link(href='css/style.css', rel='stylesheet')
+    | &#x9;&#x9;
+    link(href='css/responsive.css', rel='stylesheet')
+    // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      | &#x9;&#x9;
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+    // Fav and touch icons
+    link(rel='apple-touch-icon-precomposed', sizes='144x144', href='images/fav-144.png')
+    | &#x9;&#x9;
+    link(rel='apple-touch-icon-precomposed', sizes='114x114', href='images/fav-114.png')
+    | &#x9;&#x9;
+    link(rel='apple-touch-icon-precomposed', sizes='72x72', href='images/fav-72.png')
+    | &#x9;&#x9;
+    link(rel='apple-touch-icon-precomposed', href='images/fav-57.png')
+    | &#x9;&#x9;
+    link(rel='shortcut icon', href='images/fav.png')
+  | &#x9;
+  body
+    // Top Bar Starts
+    .top-bar(style="background-color: black; border-bottom: 1px solid white;")
+      // Nested Container Starts
+      .container.clearfix.text-center-xs
+        ul.list-unstyled.list-inline.pull-left-lg.pull-left-md.pull-left-sm.animation
+          li
+            a(href='#')
+              i.fa.fa-facebook
+          | &#x9;&#x9;&#x9;&#x9;&#x9;
+          li
+            a(href='#')
+              i.fa.fa-twitter
+          | &#x9;&#x9;&#x9;&#x9;&#x9;
+          li
+            a(href='#')
+              i.fa.fa-google-plus
+          | &#x9;&#x9;&#x9;&#x9;&#x9;
+          li
+            a(href='#')
+              i.fa.fa-instagram
+          | &#x9;&#x9;&#x9;&#x9;&#x9;
+          li
+            a(href='#')
+              i.fa.fa-pinterest-p
+        | &#x9;&#x9;&#x9;&#x9;
+        p.pull-right-lg.pull-right-md.pull-right-sm.text-right-lg.text-right-md.text-right-sm.text-light
+          | A privately funded hard money commercial &amp; residential lender.
+      // Nested Container Ends
+    // Top Bar Ends
+    // Header Starts
+    header.main-header(style="background-color: black;")
+      // Nested Container Starts
+      .container.text-center-xs
+        // Nested Row Starts
+        .row
+          // Logo Starts
+          .col-lg-3.col-sm-4.col-xs-12
+            h4(onclick="javascript:window.location='/index';", style="font-family: 'Orbitron', sans-serif;color:white;cursor: pointer;") Silver Gate Lending
+          // Logo Ends
+          // Opening Hours Starts
+          .col-sm-4.col-xs-12.col-lg-offset-2.hidden-xs
+            .clearfix
+              i.fa.fa-clock-o.pull-left-lg.pull-left-md.pull-left-sm.circle
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              h6.text-spl-color.text-medium Opening Hours
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              p.text-light
+                em Mon&ndash;Fri: 9am&ndash;6pm, Sun: 10am&ndash;1pm
+          // Opening Hours Ends
+          // Contact Number Starts
+          .col-lg-3.col-sm-4.col-xs-12.hidden-xs
+            .clearfix
+              i.fa.fa-phone.pull-left-lg.pull-left-md.pull-left-sm.circle
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              h6.text-spl-color.text-medium Contact Number
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              p.text-light
+                em 888&ndash;123&ndash;2323, 555&ndash;123&ndash;2323
+          // Contact Number Ends
+        // Nested Row Ends
+      // Nested Container Ends
+    // Header Ends
+          // Search Form Starts
+          form.navbar-form.navbar-right.hidden-sm.hidden-xs(role='search')
+            .input-group
+              input.form-control(type='text', placeholder='Search')
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              span.input-group-btn
+                button.btn.btn-default(type='button')
+                  i.fa.fa-search
+          // Search Form Ends
+        // Navbar Cat collapse Ends
+      // Nested Container Ends
+    // Main Menu Ends
+    // Main Banner Starts
+    section
+      // Nested Container Starts
+      // .container.text-lite-color
+        // h2.text-medium 404 Page
+      // Nested Container Ends
+    // Main Banner Ends
+    // Breadcrumb Starts
+    .container.text-center-xs
+      ol.breadcrumb.flat
+        li
+          a(href='/index') Home
+        | &#x9;&#x9;&#x9;&#x9;
+        li.active 404 Page
+    // Breadcrumb Ends
+    // Main Container Starts
+    .main-container.container.text-center
+      h1.text-spl-color.text-normal
+        | 4
+        i.fa.fa-meh-o
+        | 4
+      | &#x9;&#x9;&#x9;
+      h4.main-heading-1.text-spl-color.text-spl-color.text-center.text-uppercase.text-normal Oops! Page not found
+      | &#x9;&#x9;&#x9;
+      p.lead
+        | Sorry, but the page you are looking for is not found. Please, make sure you have typed the current URL.
+      // Search Form Starts
+      form.form-inline.search-form
+        .form-group
+          label.sr-only(for='search') Name
+          | &#x9;&#x9;&#x9;&#x9;&#x9;
+          input#search.form-control(type='text', placeholder='Search...')
+        | &#x9;&#x9;&#x9;&#x9;
+        button.btn.btn-secondary.text-medium.animation(type='submit') Search
+      // Search Form Ends
+      a.btn.btn-black.btn-big.animation.text-medium(href='index.html') Go To Home Page
+      | &#x9;&#x9;&#x9;
+      .spacer-medium
+    // Main Container Ends
+    // Newsletter Subscription Section Starts
+    section.newsletter-bar.text-lite-color.text-center-sm.text-center-xs
+      // Nested Container Starts
+      .container
+        // Nested Row Starts
+        .row
+          .col-lg-6.col-md-4.col-xs-12
+            .clearfix
+              h4.pull-left-lg.text-normal
+                i.fa.fa-paper-plane
+                |  Sign Up
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              h6.pull-right-lg.text-light.hidden.visible-lg.visible-sm
+                em
+                  | Get subscriber only insights &amp; news delivered
+                  br.hidden-sm.hidden-xs
+                  | by Silver Gate Lending
+          | &#x9;&#x9;&#x9;&#x9;&#x9;
+          .col-lg-6.col-md-8.col-xs-12
+            form.row
+              .col-sm-8.col-xs-12
+                .form-group
+                  label.sr-only(for='newsletter-email') Email
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  input#newsletter-email.form-control.animation-1(type='email', placeholder='Your E-mail')
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              .col-sm-4.col-xs-12
+                button.btn.btn-secondary.animation.text-uppercase(type='submit') Submit
+        // Nested Row Ends
+      // Nested Container Ends
+    // Newsletter Subscription Section Ends
+    // Footer Top Section Starts
+    section.footer-top
+      // Nested Container Starts
+      .container.text-center-xs.text-lite-color
+        // Nested Row Starts
+        .row
+          // Foot Col #1 Starts
+          .col-md-3.col-sm-6.col-xs-12
+            .foot-info
+              p
+                img.img-responsive.img-center-xs(src='images/foot-brand.png', alt='Silver Gate Lending')
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              br
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              p.text-light
+                em
+                  | There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&apos;t look even slightly believable.
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              ul.list-unstyled.list-inline.foot-sm-links
+                li.text-medium Follow Us:
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                li
+                  a(href='#')
+                    i.fa.fa-facebook.animation
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                li
+                  a(href='#')
+                    i.fa.fa-twitter.animation
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                li
+                  a(href='#')
+                    i.fa.fa-google-plus.animation
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                li
+                  a(href='#')
+                    i.fa.fa-instagram.animation
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                li
+                  a(href='#')
+                    i.fa.fa-pinterest-p.animation
+          // Foot Col #1 Ends
+          // Foot Col #2 Starts
+          .col-md-3.col-sm-6.col-xs-12
+            h5 Contact Us
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            ul.list-unstyled.foot-address-list.text-light
+              li.clearfix
+                i.fa.fa-map-marker
+
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                span
+                  strong #781, Shah Ali Banda,
+                  br
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Chairminar, Hyd- 505
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li.clearfix
+                i.fa.fa-phone
+
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                span.text-bold (123) 45678910
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li.clearfix
+                i.fa.fa-envelope
+
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                span
+                  a(href='mailto:support@demosite.com') support@demosite.com
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li.clearfix
+                i.fa.fa-clock-o
+
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                span
+                  | Mon - Fri : 10:00 - 18:00
+                  br
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Sat - Sun Holiday
+          // Foot Col #2 Ends
+          // Divider Starts
+          .col-xs-12.hidden.visible-sm
+            p
+              br
+              br
+          // Divider Ends
+          // Foot Col #3 Starts
+          .col-md-3.col-sm-6.col-xs-12
+            h5 Financial Planning
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            ul.list-unstyled.foot-list-style-1.text-light
+              li Investment Management
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li Retirement Planning
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li Long Term Care
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li Estate Planning
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li Social Security
+          // Foot Col #3 Ends
+          // Foot Col #4 Starts
+          .col-md-3.col-sm-6.col-xs-12
+            h5 Investment Planning
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            ul.list-unstyled.foot-list-style-1.text-light
+              li Wealth Management
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li Retirement &amp; College
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li Savings Business Owners
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li Insurance &amp; Annuities
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li Cash &amp; Credit
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li Stocks, Bonds &amp; Mutual Funds
+          // Foot Col #4 Ends
+        // Nested Row Ends
+      // Nested Container Ends
+    // Footer Top Section Ends
+    // Copyright Starts
+    footer.copyright
+      // Nested Container Starts
+      .container.text-center.text-lite-color
+        em.text-light
+          | Silver Gate Lending &copy; 2017. All Rights Reserved. Designed By
+          a(href='#') ispyhumanfly
+      // Nested Container Ends
+    // Copyright Ends
+    // Template JS Files
+    script(src='js/jquery-1.12.4.min.js')
+    | &#x9;
+    script(src='js/jquery-migrate-1.4.1.min.js')
+    | &#x9;
+    | &#x9;
+    script(src='js/bootstrap.min.js')
+    | &#x9;
+    script(src='js/plugins/backstretch/jquery.backstretch.min.js')
+    | &#x9;
+    script(src='js/plugins/shuffle/jquery.shuffle.modernizr.min.js')
+    | &#x9;
+    script(src='js/plugins/owl-carousel/owl.carousel.js')
+    | &#x9;
+    script(src='js/plugins/magnific-popup/jquery.magnific-popup.min.js')
+    | &#x9;
+    script(src='js/custom.js')

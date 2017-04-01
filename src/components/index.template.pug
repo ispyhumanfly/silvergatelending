@@ -1,0 +1,973 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    | &#x9;&#x9;
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    | &#x9;&#x9;
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    | &#x9;&#x9;
+    meta(name='description', content='')
+    | &#x9;&#x9;
+    meta(name='author', content='')
+    | &#x9;&#x9;
+    title Silver Gate Lending
+    // Bootstrap
+    link(href='./css/bootstrap.min.css', rel='stylesheet')
+    // Google Web Fonts
+    link(href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic', rel='stylesheet', type='text/css')
+    | &#x9;&#x9;
+    link(href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic', rel='stylesheet', type='text/css')
+    | &#x9;&#x9;
+    link(href='https://fonts.googleapis.com/css?family=Exo|Noto+Sans|Orbitron', rel='stylesheet')
+    // Template CSS Files
+    link(href='./font-awesome/css/font-awesome.min.css', rel='stylesheet')
+    | &#x9;&#x9;
+    link(href='./js/plugins/owl-carousel/owl.carousel.css', rel='stylesheet')
+    | &#x9;&#x9;
+    link(href='./js/plugins/owl-carousel/owl.theme.css', rel='stylesheet')
+    | &#x9;&#x9;
+    link(href='./js/plugins/magnific-popup/magnific-popup.css', rel='stylesheet')
+    | &#x9;&#x9;
+    link(href='./css/style.css', rel='stylesheet')
+    | &#x9;&#x9;
+    link(href='./css/responsive.css', rel='stylesheet')
+    // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      | &#x9;&#x9;
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+    // Fav and touch icons
+    link(rel='apple-touch-icon-precomposed', sizes='144x144', href='./images/fav-144.png')
+    | &#x9;&#x9;
+    link(rel='apple-touch-icon-precomposed', sizes='114x114', href='./images/fav-114.png')
+    | &#x9;&#x9;
+    link(rel='apple-touch-icon-precomposed', sizes='72x72', href='./images/fav-72.png')
+    | &#x9;&#x9;
+    link(rel='apple-touch-icon-precomposed', href='./images/fav-57.png')
+    | &#x9;&#x9;
+    link(rel='shortcut icon', href='./images/fav.png')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+    script.
+      $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+      // Store hash
+      var hash = this.hash;
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+      scrollTop: $(hash).offset().top
+      }, 800, function(){
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+      } // End if
+      });
+      });
+  | &#x9;
+  body
+    // Header Parallax Starts
+    header.header-parallax.parallax.clearfix
+      // Top Bar Starts
+      .top-bar
+        // Nested Container Starts
+        .container.clearfix.text-center-xs
+          ul.list-unstyled.list-inline.pull-left-lg.pull-left-md.pull-left-sm.animation
+            li
+              a(href='#')
+                i.fa.fa-facebook
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            li
+              a(href='#')
+                i.fa.fa-twitter
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            li
+              a(href='#')
+                i.fa.fa-google-plus
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            li
+              a(href='#')
+                i.fa.fa-instagram
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            li
+              a(href='#')
+                i.fa.fa-pinterest-p
+          | &#x9;&#x9;&#x9;&#x9;&#x9;
+          p.pull-right-lg.pull-right-md.pull-right-sm.text-right-lg.text-right-md.text-right-sm.text-medium
+            | A privately funded hard money commercial &amp; residential lender.
+        // Nested Container Ends
+      // Top Bar Ends
+      // Nested Container Starts
+      .container
+        // Main Menu Starts
+        nav#nav.main-menu.navbar.flat
+          // Nav Header Starts
+          .navbar-header
+            button.btn.btn-navbar.navbar-toggle.flat.animation(type='button', data-toggle='collapse', data-target='.navbar-cat-collapse')
+              span.sr-only Toggle Navigation
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              i.fa.fa-bars
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            h4(onclick="javascript:window.location='/';", style="font-family: 'Orbitron', sans-serif;color:white;cursor: pointer;") Silver Gate Lending
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            br
+          // Nav Header Ends
+          // Navbar Cat collapse Starts
+          .collapse.navbar-collapse.navbar-cat-collapse.animation
+            // Nav Links Starts
+            ul.nav.navbar-nav.navbar-right.text-bold
+              li
+                a(href='#about') About Us
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li
+                a(href='#loans') Loan Services
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li
+                a(href='#') Learn More
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li.dropdown
+                a.dropdown-toggle(href='#', data-toggle='dropdown')
+                  | Pages
+                  i.fa.fa-angle-down
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                ul.dropdown-menu.flat(role='menu')
+                  li(tabindex='-1')
+                    a(href='#') Item 1
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  li(tabindex='-1')
+                    a(href='#') Item 2
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  li(tabindex='-1')
+                    a(href='#') Item 3
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  li(tabindex='-1')
+                    a(href='#') Item 4
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  li(tabindex='-1')
+                    a(href='#') Item 5
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  li(tabindex='-1')
+                    a(href='#') Item 6
+            // Nav Links Ends
+          // Navbar Cat collapse Ends
+        // Main Menu Ends
+        // Slider Starts
+        #main-slider.carousel.slide.carousel-fade.hidden-xs(data-ride='carousel')
+          // Wrapper For Slides Starts
+          .carousel-inner.text-center
+            // Slide #1 Starts
+            .item.active
+              .carousel-caption.text-lite-color.hidden-xs
+                // Slider 1 Title
+                h4.text-medium Direct Private Real Estate Financing Solutions
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                h5.text-light
+                  | Our mission is to proactively serve and satisfy our clients by consistently providing superior lending services and advice, delivered by a team
+                  | of dedicated and experienced professionals.
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                a.btn.btn-secondary.animation.text-medium(href='#') Learn More
+            // Slide #1 Ends
+            // Slide #2 Starts
+            .item
+              .carousel-caption.text-lite-color.hidden-xs
+                h4.text-medium Direct Private Real Estate Financing Solutions
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                h5.text-light
+                  | A team committed to achieving the highest
+                  | standards of the Mortgage profession, in order to maintain a competitive
+                  | advantage for both our clients and our company.
+                  a.btn.btn-secondary.animation(href='#') Learn More
+            // Slide #2 Ends
+          // Wrapper For Slides Ends
+          // Control Starts
+          //
+            a class="left carousel-control animation" id="prev" href="#main-slider" role="button" data-slide="prev">
+            <span class="fa fa-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control animation" id="next" href="#main-slider" role="button" data-slide="next">
+            <span class="fa fa-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a
+          // Control Ends
+        // Slider Ends
+      // Nested Container Ends
+    // Header Parallax Ends
+    // About Section Starts
+    section.section-area
+      // Nested Container Starts
+      .container.text-center-xs
+        // Nested Row Starts
+        .row
+          // Content Starts
+          .col-md-6.col-xs-12
+            h3#about.main-heading-1.text-spl-color.text-normal.text-uppercase About Us
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            p.lead
+              | Our goal is to make
+              strong common sense
+              |  loans to borrowers &amp; businesses
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;that don&rsquo;t fit the traditional lending mold for whatever reason.
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            p
+              | This depth of knowledge and experience allows us flexibility to fund loans quickly that many others would never consider. With our depth of lending experience, Seaview Funding has more than likely encountered a scenario similar to yours.
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            ul.list-unstyled.list-style-4
+              li.clearfix
+                i.fa.fa-cubes.pull-left-lg.pull-left-md.pull-left-sm
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                h6.text-medium No Upfront Fees
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                p
+                  | Silver Gate Lending is different than other hard money lenders. Most lenders require appraisals and non-refundable
+                  | deposits up front for due-diligence processes; these fees can run upwards of thousands of dollars.
+                //
+                  p class="text-right-lg text-right-md text-right-sm text-light">
+                  <a href="#" class="text-more-link animation"><em>View More...</em></a>
+                  </p
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li.clearfix
+                i.fa.fa-diamond.pull-left-lg.pull-left-md.pull-left-sm
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                h6.text-medium People Like Us
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                p
+                  | It was popularised in the of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                p.text-right-lg.text-right-md.text-right-sm.text-light
+                  a.text-more-link.animation(href='#')
+                    em View More...
+          // Content Ends
+          // Divider For Small Screen Starts
+          .col-xs-12.hidden.visible-sm.visible-xs
+            p
+              br
+          // Divider For Small Screen Ends
+          // Carousel Starts
+          .col-md-6.col-xs-12
+            #carousel-1.carousel.slide(data-ride='carousel')
+              // Indicators Starts
+              ol.carousel-indicators
+                li.active(data-target='#carousel-1', data-slide-to='0')
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                li(data-target='#carousel-1', data-slide-to='1')
+
+                li(data-target='#carousel-1', data-slide-to='2')
+              // Indicators Ends
+              // Wrap For Slides Starts
+              .carousel-inner(role='listbox')
+                .item.active
+                  img.img-responsive.img-center(src='images/about/about-carousel-img1.jpg', alt='About Image')
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                .item
+                  img.img-responsive.img-center(src='images/about/about-carousel-img2.jpg', alt='About Image')
+
+                .item
+                  img.img-responsive.img-center(src='images/about/about-carousel-img3.jpg', alt='About Image')
+              // Wrap For Slides Ends
+              // Controls Starts
+              a.left.carousel-control(href='#carousel-1', role='button', data-slide='prev')
+                span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                span.sr-only Previous
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              a.right.carousel-control(href='#carousel-1', role='button', data-slide='next')
+                span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                span.sr-only Next
+              // Controls Ends
+          // Carousel Ends
+        // Nested Row Ends
+      // Nested Container Ends
+    // About Section Ends
+    // Divider Starts
+    .container
+      hr.hr-style-1
+    // Divider Ends
+    // Service Section Starts
+    section.section-area
+      // Nested Container Starts
+      .container.text-center-xs
+        h4#loans.main-heading-1.text-spl-color.text-center Loans &amp; Services
+        | &#x9;&#x9;&#x9;&#x9;
+        p
+          | There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,
+          br
+          | or randomised words which don&apos;t look even slightly believable. If you are going to use a passage of Lorem Ipsum.
+        | &#x9;&#x9;&#x9;&#x9;
+        br
+        // Nested Row Starts
+        .row
+          // Left Col Starts
+          .col-sm-3.col-xs-12
+            // Box #1 Starts
+            .box-6.text-right.clearfix
+              i.fa.fa-book
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              h5.sub-heading-1.tiny.text-normal.text-right Financial Planning
+            // Box #1 Ends
+            // Box #2 Starts
+            .box-6.text-right.clearfix
+              i.fa.fa-dashboard
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              h5.sub-heading-1.tiny.text-normal.text-right Marketing Plans
+            // Box #2 Ends
+            // Box #3 Starts
+            .box-6.text-right.clearfix
+              i.fa.fa-bullseye
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              h5.sub-heading-1.tiny.text-normal.text-right Stock Market
+            // Box #3 Ends
+          // Left Col Ends
+          // Center Col Starts
+          .col-sm-6.col-xs-12
+            .box-7.text-lite-color.parallax
+              .inner
+                h4.text-center.text-normal Financial Planning
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                p
+                  | There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&apos;t look even slightly believable. If you are going to use a passage of Lorem Ipsum.
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                p
+                  | Our company is your one stop solution for all needs. There is no doubt that we are the leaders and you don&apos;t have to worry about services.
+                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.
+          // Center Col Ends
+          // Right Col Starts
+          .col-sm-3.col-xs-12
+            // Box #1 Starts
+            .box-6.text-left.clearfix
+              i.fa.fa-briefcase
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              h5.sub-heading-1.tiny.text-normal.text-left Tax Planning
+            // Box #1 Ends
+            // Box #2 Starts
+            .box-6.text-left.clearfix
+              i.fa.fa-line-chart
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              h5.sub-heading-1.tiny.text-normal.text-left Risk Management
+            // Box #2 Ends
+            // Box #3 Starts
+            .box-6.text-left.clearfix
+              i.fa.fa-clock-o
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              h5.sub-heading-1.tiny.text-normal.text-left Retirement Plans
+            // Box #3 Ends
+          // Right Col Ends
+        // - Nested Row Ends
+      // Nested Container Ends
+    // Service Section Ends
+    // Divider Starts
+    .container
+      hr.hr-style-1
+    // Divider Ends
+    // Why Us Section Starts
+    section.section-area
+      // Nested Container Starts
+      .container.text-center-xs
+        // Nested Row Starts
+        .row
+          // Left Column Starts
+          .col-lg-3.col-md-4.col-sm-5.col-xs-12
+            h4.main-heading-1.text-spl-color.text-uppercase.text-normal Why to Choose Us ?
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            p
+              | There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&apos;t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn&apos;t anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            a.btn.btn-big.btn-secondary.animation.text-medium(href='#') Company Services
+          // Left Column Ends
+          // Space For Extra Small Screen Starts
+          .col-xs-12.hidden.visible-xs
+            p
+              br
+          // Space For Extra Small Screen Ends
+          // Right Column Starts
+          .col-lg-9.col-md-8.col-sm-7.col-xs-12
+            // Services List Starts
+            .row
+              // Service Box #1 Starts
+              .col-md-4.col-sm-6.col-xs-12
+                .box-2
+                  p
+                    img.img-responsive.img-center-xs(src='images/image23.jpg', alt='Image')
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  h5.sub-heading-1.tiny.text-normal.text-center-xs Cloud Managing
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  p.text-grey-color There are many variations of passages of Lorem Ipsum available....
+              // Service Box #1 Ends
+              // Service Box #2 Starts
+              .col-md-4.col-sm-6.col-xs-12
+                .box-2
+                  p
+                    img.img-responsive.img-center-xs(src='images/image24.jpg', alt='Image')
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  h5.sub-heading-1.tiny.text-normal.text-center-xs No Chance of Fraud
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  p.text-grey-color There are many variations of passages of Lorem Ipsum available....
+              // Service Box #2 Ends
+              // Service Box #3 Starts
+              .col-md-4.col-sm-6.col-xs-12
+                .box-2
+                  p
+                    img.img-responsive.img-center-xs(src='images/image25.jpg', alt='Image')
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  h5.sub-heading-1.tiny.text-normal.text-center-xs Risk Management
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  p.text-grey-color There are many variations of passages of Lorem Ipsum available....
+              // Service Box #3 Ends
+              // Service Box #4 Starts
+              .col-md-4.col-sm-6.col-xs-12
+                .box-2
+                  p
+                    img.img-responsive.img-center-xs(src='images/image26.jpg', alt='Image')
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  h5.sub-heading-1.tiny.text-normal.text-center-xs Technology Solutions
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  p.text-grey-color There are many variations of passages of Lorem Ipsum available....
+              // Service Box #4 Ends
+              // Service Box #5 Starts
+              .col-md-4.col-sm-6.col-xs-12
+                .box-2
+                  p
+                    img.img-responsive.img-center-xs(src='images/image27.jpg', alt='Image')
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  h5.sub-heading-1.tiny.text-normal.text-center-xs Medical Claims
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  p.text-grey-color There are many variations of passages of Lorem Ipsum available....
+              // Service Box #5 Ends
+              // Service Box #6 Starts
+              .col-md-4.col-sm-6.col-xs-12
+                .box-2
+                  p
+                    img.img-responsive.img-center-xs(src='images/image28.jpg', alt='Image')
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  h5.sub-heading-1.tiny.text-normal.text-center-xs Business Intelligence
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  p.text-grey-color There are many variations of passages of Lorem Ipsum available....
+              // Service Box #6 Ends
+            // Services List Ends
+          // Right Column Ends
+        // Nested Row Ends
+      // Nested Container Ends
+    // Why Us Section Ends
+    // Info Section Starts
+    section.section-area.section-info.sub.parallax
+      // Nested Container Starts
+      .container.text-center.text-lite-color
+        // Nested Row Starts
+        .row
+          .col-sm-10.col-xs-12.col-sm-offset-1
+            h4.main-heading-1.text-normal.text-center More Than 180 Financial Planners, One Philosophy
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            p
+              | There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&apos;t look even slightly believable. If you are going to use a passage of Lorem Ipsum.
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            ul.list-unstyled.row.stats-info
+              li.col-md-3.col-sm-6.col-xs-12
+                div
+                  h3.text-bold.badges-counter 575
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  h5.text-light Cases Complete
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li.col-md-3.col-sm-6.col-xs-12
+                div
+                  h3.text-bold.badges-counter 1784
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  h5.text-light Our Consultants
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li.col-md-3.col-sm-6.col-xs-12
+                div
+                  h3.text-bold.badges-counter 498
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  h5.text-light Cases Won
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li.col-md-3.col-sm-6.col-xs-12
+                div
+                  h3.text-bold.badges-counter 420
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  h5.text-light Happy Clients
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            a.btn.btn-secondary.btn-big.animation.text-medium(href='#') Book An Appointment
+        // Nested Row Ends
+      // Nested Container Ends
+    // Info Section Ends
+    // Blog Section Starts
+    section.section-area
+      // Nested Container Starts
+      .container
+        h4.main-heading-1.text-center.text-spl-color.text-normal Our Blog Posts
+        | &#x9;&#x9;&#x9;&#x9;
+        p.text-center
+          | There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or
+          br
+          | randomised words which don&apos;t look even slightly believable. If you are going to use a passage of Lorem Ipsum.
+        // Nested Row Starts
+        .row
+          // Blog Post #1 Starts
+          .col-sm-4.col-xs-12
+            .box-3.animation.text-center-xs
+              p
+                img.img-responsive.img-center-xs(src='images/image35.jpg', alt='Blog Image')
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              .inner
+                p.date-meta.text-grey-color.text-uppercase
+                  span.label.label-default
+                    i.fa.fa-calendar
+                    | &nbsp; 22 June 2016
+                  | &nbsp;
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  span.label.label-primary
+                    i.fa.fa-clock-o
+                    | &nbsp; 10:00 PM
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                h6.sub-heading-1.tiny.text-medium.text-center-xs
+                  | Technology Solutions
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                p.text-grey-color
+                  | There are many variations of passages of Lorem Ipsum available the majorigty have some....
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                p.text-right-lg.text-right-md.text-right-sm
+                  a.more-link.animation(href='blog-single.html') view more..
+          // Blog Post #1 Ends
+          // Blog Post #2 Starts
+          .col-sm-4.col-xs-12
+            .box-3.text-center-xs
+              p
+                img.img-responsive.img-center-xs(src='images/image36.jpg', alt='Blog Image')
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              .inner
+                p.date-meta.text-grey-color.text-uppercase
+                  span.label.label-default
+                    i.fa.fa-calendar
+                    | &nbsp; 22 June 2016
+                  | &nbsp;
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  span.label.label-primary
+                    i.fa.fa-clock-o
+                    | &nbsp; 10:00 PM
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                h6.sub-heading-1.tiny.text-medium.text-center-xs
+                  | Investment Management
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                p.text-grey-color
+                  | There are many variations of passages of Lorem Ipsum available the majorigty have some....
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                p.text-right-lg.text-right-md.text-right-sm
+                  a.more-link.animation(href='blog-single.html') view more..
+          // Blog Post #2 Ends
+          // Blog Post #3 Starts
+          .col-sm-4.col-xs-12
+            .box-3.text-center-xs
+              p
+                img.img-responsive.img-center-xs(src='images/image37.jpg', alt='Blog Image')
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              .inner
+                p.date-meta.text-grey-color.text-uppercase
+                  span.label.label-default
+                    i.fa.fa-calendar
+                    | &nbsp; 22 June 2016
+                  | &nbsp;
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  span.label.label-primary
+                    i.fa.fa-clock-o
+                    | &nbsp; 10:00 PM
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                h6.sub-heading-1.tiny.text-medium.text-center-xs
+                  | Retirement Planning
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                p.text-grey-color
+                  | There are many variations of passages of Lorem Ipsum available the majorigty have some....
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                p.text-right-lg.text-right-md.text-right-sm
+                  a.more-link.animation(href='blog-single.html') view more..
+          // Blog Post #3 Ends
+        // Nested Row Ends
+      // Nested Container Ends
+    // Blog Section Ends
+    // Testimonials Section Starts
+    section.section-area.section-testimonials.sub.parallax
+      // Nested Container Starts
+      .container
+        // Nested Row Starts
+        .row
+          // Heading Starts
+          .col-sm-6.col-xs-12
+            h1.text-center.text-lite-color
+              i.fa.fa-comments-o
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            h3.text-light.text-lite-color.text-center
+              | What are our clients
+              br
+              | talk about us ?
+          // Heading Ends
+          // Testimonials Starts
+          .col-sm-6.col-xs-12
+            // Testimonial Carousel Starts
+            #carousel-testimonials.carousel.slide(data-ride='carousel')
+              // Testimonial Box Wrap Starts
+              .testimonial-box-wrap
+                // Testimonial Box Starts
+                .testimonial-box
+                  // Wrapper For Slides Starts
+                  .carousel-inner.text-center-xs
+                    // Item #1 Starts
+                    .item.active
+                      p.text-light
+                        | There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&apos;t look even slightly believable.
+                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                      ul.list-unstyled.clearfix
+                        li.pull-left-lg.pull-left-md
+                          img.img-responsive.img-center-sm.img-center-xs.circle(src='images/thumb-img1.jpg', alt='Image')
+                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                        li.pull-left-lg.pull-left-md
+                          h6.text-spl-color.text-medium Sainath Chillapuram
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          span.text-grey-color.text-light KKR Industries
+                    // Item #1 Ends
+                    // Item #2 Starts
+                    .item
+                      p.text-light
+                        | There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&apos;t look even slightly believable.
+                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                      ul.list-unstyled.clearfix
+                        li.pull-left-lg.pull-left-md
+                          img.img-responsive.img-center-sm.img-center-xs.circle(src='images/thumb-img1.jpg', alt='Image')
+                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                        li.pull-left-lg.pull-left-md
+                          h6.text-spl-color.text-medium Sainath Chillapuram
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          span.text-grey-color.text-light KKR Industries
+                    // Item #2 Ends
+                    // Item #3 Starts
+                    .item
+                      p.text-light
+                        | There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&apos;t look even slightly believable.
+                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                      ul.list-unstyled.clearfix
+                        li.pull-left-lg.pull-left-md
+                          img.img-responsive.img-center-sm.img-center-xs.circle(src='images/thumb-img1.jpg', alt='Image')
+                        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                        li.pull-left-lg.pull-left-md
+                          h6.text-spl-color.text-medium Sainath Chillapuram
+                          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                          span.text-grey-color.text-light KKR Industries
+                    // Item #3 Ends
+                  // Wrapper For Slides Ends
+                // Testimonial Box Ends
+              // Testimonial Box Wrap Ends
+              // Indicators Starts
+              ol.carousel-indicators
+                li.active(data-target='#carousel-testimonials', data-slide-to='0')
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                li(data-target='#carousel-testimonials', data-slide-to='1')
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                li(data-target='#carousel-testimonials', data-slide-to='2')
+              // Indicators Ends
+            // Testimonial Carousel Ends
+          // Testimonials Ends
+        // Nested Row Ends
+      // Nested Container Ends
+    // Testimonials Section Ends
+    // Why Work With US Starts
+    section.section-area
+      // Nested Container Starts
+      .container
+        h4.main-heading-1.text-spl-color.text-center-xs Why Work With Us ?
+        // Nested Row Starts
+        .row
+          // Features Starts
+          .col-sm-6.col-xs-12
+            // List Starts
+            ul.list-unstyled.list-style-5.row
+              // List #1 Starts
+              li.col-sm-6.col-xs-12.clearfix
+                i.fa.fa-cogs.pull-left
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                h6.text-medium Dedicated Team
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                p
+                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+              // List #1 Ends
+              // List #2 Starts
+              li.col-sm-6.col-xs-12.clearfix
+                i.fa.fa-clipboard.pull-left
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                h6.text-medium ISO 2009 Certified
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                p
+                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+              // List #2 Ends
+              // List #3 Starts
+              li.col-sm-6.col-xs-12.clearfix
+                i.fa.fa-thumbs-up.pull-left
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                h6.text-medium Clear Inputs for Clients
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                p
+                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+              // List #3 Ends
+              // List #4 Starts
+              li.col-sm-6.col-xs-12.clearfix
+                i.fa.fa-wechat.pull-left
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                h6.text-medium 24x7 Support
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                p
+                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+              // List #4 Ends
+              // List #5 Starts
+              li.col-sm-6.col-xs-12.clearfix
+                i.fa.fa-users.pull-left
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                h6.text-medium Friendly care
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                p
+                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+              // List #5 Ends
+              // List #6 Starts
+              li.col-sm-6.col-xs-12.clearfix
+                i.fa.fa-paper-plane-o.pull-left
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                h6.text-medium 100% Satisfaction
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                p
+                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry...
+              // List #6 Ends
+            // List Ends
+          // Features Ends
+          // Ratings Starts
+          .col-sm-6.col-xs-12
+            ul.list-unstyled.list-style-6
+              li
+                h6.text-medium
+                  i.fa.fa-check
+                  |  Client Satisfaction
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                .progress.flat
+                  .progress-bar(role='progressbar', aria-valuenow='90', aria-valuemin='0', aria-valuemax='100', style='width: 90%;')
+                    span.sr-only 90% Complete
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li
+                h6.text-medium
+                  i.fa.fa-check
+                  |  Finance Global Network Advice
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                .progress.flat
+                  .progress-bar(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%;')
+                    span.sr-only 60% Complete
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li
+                h6.text-medium
+                  i.fa.fa-check
+                  |  Yearly Invested Profit Reviews
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                .progress.flat
+                  .progress-bar(role='progressbar', aria-valuenow='70', aria-valuemin='0', aria-valuemax='100', style='width: 70%;')
+                    span.sr-only 70% Complete
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li
+                h6.text-medium
+                  i.fa.fa-check
+                  |  Insurance Advisory
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                .progress.flat
+                  .progress-bar(role='progressbar', aria-valuenow='60', aria-valuemin='0', aria-valuemax='100', style='width: 60%;')
+                    span.sr-only 60% Complete
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li
+                h6.text-medium
+                  i.fa.fa-check
+                  |  New &amp; Returning Customers
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                .progress.flat
+                  .progress-bar(role='progressbar', aria-valuenow='50', aria-valuemin='0', aria-valuemax='100', style='width: 50%;')
+                    span.sr-only 50% Complete
+          // Ratings Ends
+        // Nested Row Ends
+      // Nested Container Ends
+    // Why Work With US Ends
+    // Newsletter Subscription Section Starts
+    section.newsletter-bar.text-lite-color.text-center-sm.text-center-xs
+      // Nested Container Starts
+      .container
+        // Nested Row Starts
+        .row
+          .col-lg-6.col-md-4.col-xs-12
+            .clearfix
+              h4.pull-left-lg.text-normal
+                i.fa.fa-paper-plane
+                |  Sign Up
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              h6.pull-right-lg.text-light.hidden.visible-lg.visible-sm
+                em
+                  | Get subscriber only insights &amp; news delivered
+                  br.hidden-sm.hidden-xs
+                  | by Silver Gate Lending
+          | &#x9;&#x9;&#x9;&#x9;&#x9;
+          .col-lg-6.col-md-8.col-xs-12
+            form.row
+              .col-sm-8.col-xs-12
+                .form-group
+                  label.sr-only(for='newsletter-email') Email
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  input#newsletter-email.form-control.animation-1(type='email', placeholder='Your E-mail')
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              .col-sm-4.col-xs-12
+                button.btn.btn-secondary.animation.text-uppercase(type='submit') Submit
+        // Nested Row Ends
+      // Nested Container Ends
+    // Newsletter Subscription Section Ends
+    // Footer Top Section Starts
+    section.footer-top.sub.parallax
+      // Nested Container Starts
+      .container.text-center-xs.text-lite-color
+        // Nested Row Starts
+        .row
+          // Foot Col #1 Starts
+          .col-md-3.col-sm-6.col-xs-12
+            .foot-info
+              p
+                img.img-responsive.img-center-xs(src='images/foot-brand.png', alt='Fin Adviser')
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              br
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              p.text-light
+                em
+                  | There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&apos;t look even slightly believable.
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              ul.list-unstyled.list-inline.foot-sm-links
+                li.text-medium Follow Us:
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                li
+                  a(href='#')
+                    i.fa.fa-facebook.animation
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                li
+                  a(href='#')
+                    i.fa.fa-twitter.animation
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                li
+                  a(href='#')
+                    i.fa.fa-google-plus.animation
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                li
+                  a(href='#')
+                    i.fa.fa-instagram.animation
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                li
+                  a(href='#')
+                    i.fa.fa-pinterest-p.animation
+          // Foot Col #1 Ends
+          // Foot Col #2 Starts
+          .col-md-3.col-sm-6.col-xs-12
+            h5 Contact Us
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            ul.list-unstyled.foot-address-list.text-light
+              li.clearfix
+                i.fa.fa-map-marker
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                span
+                  strong #781, Shah Ali Banda,
+                  br
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Chairminar, Hyd- 505
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li.clearfix
+                i.fa.fa-phone
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                span.text-bold (123) 45678910
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li.clearfix
+                i.fa.fa-envelope
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                span
+                  a(href='mailto:support@demosite.com') support@demosite.com
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li.clearfix
+                i.fa.fa-clock-o
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                span
+                  | Mon - Fri : 10:00 - 18:00
+                  br
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Sat - Sun Holiday
+          // Foot Col #2 Ends
+          // Divider Starts
+          .col-xs-12.hidden.visible-sm
+            p
+              br
+              br
+          // Divider Ends
+          // Foot Col #3 Starts
+          .col-md-3.col-sm-6.col-xs-12
+            h5 Financial Planning
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            ul.list-unstyled.foot-list-style-1.text-light
+              li Investment Management
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li Retirement Planning
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li Long Term Care
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li Estate Planning
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li Social Security
+          // Foot Col #3 Ends
+          // Foot Col #4 Starts
+          .col-md-3.col-sm-6.col-xs-12
+            h5 Investment Planning
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            ul.list-unstyled.foot-list-style-1.text-light
+              li Wealth Management
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li Retirement &amp; College
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li Savings Business Owners
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li Insurance &amp; Annuities
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li Cash &amp; Credit
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              li Stocks, Bonds &amp; Mutual Funds
+          // Foot Col #4 Ends
+        // Nested Row Ends
+        // Spacer Starts
+        .spacer
+        // Spacer Ends
+        // Map Starts
+        .footer-map
+        // Map Ends
+      // Nested Container Ends
+    // Footer Top Section Ends
+    // Copyright Starts
+    footer.copyright
+      // Nested Container Starts
+      .container.text-center.text-lite-color
+        em.text-light
+          | Silver Gate Lending &copy; 2017. All Rights Reserved. Designed By
+          a(href='http://ispyhumanfly.com') ispyhumanfly
+      // Nested Container Ends
+    // Copyright Ends
+    // Template JS Files
+    script(src='js/jquery-1.12.4.min.js')
+    | &#x9;
+    script(src='js/jquery-migrate-1.4.1.min.js')
+    | &#x9;
+    script(src='js/bootstrap.min.js')
+    | &#x9;
+    script(src='js/plugins/backstretch/jquery.backstretch.min.js')
+    | &#x9;
+    script(src='js/plugins/shuffle/jquery.shuffle.modernizr.min.js')
+    | &#x9;
+    script(src='js/plugins/owl-carousel/owl.carousel.js')
+    | &#x9;
+    script(src='js/plugins/magnific-popup/jquery.magnific-popup.min.js')
+    | &#x9;
+    script(src='https://maps.googleapis.com/maps/api/js?v=3&sensor=false')
+    | &#x9;
+    script(src='js/map.js')
+    | &#x9;
+    script(src='js/custom.js')
