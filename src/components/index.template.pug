@@ -58,8 +58,8 @@ html(lang='en')
         })
 
         $(document).ready(function() {
-            $('body').hide()
-            $('body').fadeIn(1500)
+            $('html').hide()
+            $('html').fadeIn(1500)
         })
 
   body
@@ -150,30 +150,31 @@ html(lang='en')
           // Navbar Cat collapse Ends
         // Main Menu Ends
         // Slider Starts
-        #main-slider.carousel.slide.carousel-fade.hidden-xs(data-ride='carousel')
+        #main-slider.carousel.slide.carousel-fade.hidden-xs(data-ride='carousel', style='margin-top: -60px;')
           // Wrapper For Slides Starts
           .carousel-inner.text-center
             // Slide #1 Starts
             .item.active
               .carousel-caption.text-lite-color.hidden-xs
                 // Slider 1 Title
-                h4.text-medium Direct Private Real Estate Financing Solutions
+                h5.text-medium Direct Private Real Estate Financing Solutions
 
-                h5.text-light
+                h6.text-light
                   | Our mission is to proactively serve and satisfy our clients by consistently providing superior lending services and advice, delivered by a team
                   | of dedicated and experienced professionals.
-
+                br
                 a.btn.btn-secondary.animation.text-medium(href='#') Learn More
             // Slide #1 Ends
             // Slide #2 Starts
             .item
               .carousel-caption.text-lite-color.hidden-xs
-                h4.text-medium Direct Private Real Estate Financing Solutions
+                h5.text-medium Direct Private Real Estate Financing Solutions
 
-                h5.text-light
+                h6.text-light
                   | A team committed to achieving the highest
                   | standards of the Mortgage profession, in order to maintain a competitive
                   | advantage for both our clients and our company.
+                  br
                   a.btn.btn-secondary.animation(href='#') Learn More
             // Slide #2 Ends
           // Wrapper For Slides Ends
