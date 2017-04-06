@@ -7,9 +7,9 @@ html(lang='en')
 
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
 
-    meta(name='description', content='')
+    meta(name='description', content='Valance')
 
-    meta(name='author', content='')
+    meta(name='author', content='ispyhumanfly')
 
     title Silver Gate Lending
     // Bootstrap
@@ -40,37 +40,25 @@ html(lang='en')
       script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
     // Fav and touch icons
     link(rel='apple-touch-icon-precomposed', sizes='144x144', href='./images/fav-144.png')
-
     link(rel='apple-touch-icon-precomposed', sizes='114x114', href='./images/fav-114.png')
-
     link(rel='apple-touch-icon-precomposed', sizes='72x72', href='./images/fav-72.png')
-
     link(rel='apple-touch-icon-precomposed', href='./images/fav-57.png')
-
     link(rel='shortcut icon', href='./images/fav.png')
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+
+    style
+        include index.style.less
+
+    script(src='./js/jquery-1.12.4.min.js')
     script.
-      $(document).ready(function(){
-      // Add smooth scrolling to all links
-      $("a").on('click', function(event) {
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-      // Store hash
-      var hash = this.hash;
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-      scrollTop: $(hash).offset().top
-      }, 800, function(){
-      // Add hash (#) to URL when done scrolling (default click behavior)
-      window.location.hash = hash;
-      });
-      } // End if
-      });
-      });
-  |
+
+        $(document).load(function() {
+        })
+
+        $(document).ready(function() {
+            $('body').hide()
+            $('body').fadeIn(1500)
+        })
+
   body
     // Header Parallax Starts
     header.header-parallax.parallax.clearfix
@@ -953,21 +941,36 @@ html(lang='en')
     // Copyright Ends
     // Template JS Files
     script(src='js/jquery-1.12.4.min.js')
-    |
     script(src='js/jquery-migrate-1.4.1.min.js')
-    |
     script(src='js/bootstrap.min.js')
-    |
     script(src='js/plugins/backstretch/jquery.backstretch.min.js')
-    |
     script(src='js/plugins/shuffle/jquery.shuffle.modernizr.min.js')
-    |
     script(src='js/plugins/owl-carousel/owl.carousel.js')
-    |
     script(src='js/plugins/magnific-popup/jquery.magnific-popup.min.js')
-    |
     script(src='https://maps.googleapis.com/maps/api/js?v=3&sensor=false')
-    |
     script(src='js/map.js')
-    |
     script(src='js/custom.js')
+    script(src='https://raw.githubusercontent.com/HubSpot/pace/v1.0.0/pace.min.js')
+
+    script.
+      $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+      // Store hash
+      var hash = this.hash;
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+      scrollTop: $(hash).offset().top
+      }, 800, function(){
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+      } // End if
+      });
+      });
+
